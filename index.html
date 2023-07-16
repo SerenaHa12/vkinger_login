@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikinger | Home</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <style>
+      /* CSS code here */
+      .login,
+      .register {
+        display: none;
+      }
+
+      .login.active,
+      .register.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- title -->
+      <div class="title">
+        <div class="title_logo">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+        <div class="title_h2">WELCOME TO</div>
+        <div class="title_h1">VIKINGER</div>
+        <div class="title_h3">
+          The next generation social network & community! Connect with your
+          friends and play with our quests and badges gamification system!
+        </div>
+
+        <div class="title_btn">
+          <button class="btn title_btn_login">Login</button>
+          <button class="btn title_btn_resgister">Register</button>
+        </div>
+      </div>
+
+      <div class="form">
+          <!-- form login -->
+          <div class="login">
+            <div class="login_h3">Account Login</div>
+            <input
+              type="text"
+              placeholder="Username or Email"
+              class="login_input-text"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="login_input-password"
+            />
+            <div class="login_action">
+              <p><input type="checkbox" /><label>Remember Me</label></p>
+              <p><a href="#!">Forgot Password ?</a></p>
+            </div>
+    
+            <button>Login to your account</button>
+            <p>Login with your Social Account</p>
+            <div class="login-social">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+    
+          <div class="register">
+            <div class="register_h3">Create your Account!</div>
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="login_input-text"
+            />
+            <input
+              type="text"
+              placeholder="Username"
+              class="login_input-text"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="login_input-password"
+            />
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              class="login_input-password"
+            />
+            <div class="register_action">
+              <p><input type="checkbox" /><label>Send me news and updates via email</label></p>
+            </div>
+    
+            <button>Register Now</button>
+            <p>
+              You'll receive a confirmation email in your inbox with a link to
+              activate your account. If you have any problems, <a href="#!">contact us!</a>
+            </p>
+          </div>
+      </div>
+
+    </div>
+
+    <script>
+      // JavaScript code here
+      // Get references to the login and register buttons
+      const loginButton = document.querySelector('.title_btn_login');
+      const registerButton = document.querySelector('.title_btn_resgister');
+
+      // Get references to the login and register forms
+      const loginForm = document.querySelector('.login');
+      const registerForm = document.querySelector('.register');
+
+      // Add event listeners to the buttons
+      loginButton.addEventListener('click', () => {
+        loginForm.classList.add('active');
+        registerForm.classList.remove('active');
+      });
+
+      registerButton.addEventListener('click', () => {
+        registerForm.classList.add('active');
+        loginForm.classList.remove('active');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,331 @@
+$light-00: #fff;
+$dark-00: #000;
+$dark-01: #545454;
+$green-01: #23d2e2;
+$green-01: #615dfa;
+$green-02: #3763d2;
+$green-03: #1abcff;
+$green-04: #7b5dfa;
+$red-01: #fd434f;
+
+// fonts
+$rajdhani: "Rajdhani", sans-serif;
+$titillium: "Titillium Web", sans-serif;
+
+body {
+  font-family: $titillium;
+  background-color: $dark-00;
+  background-image: url(../img/landing-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    min-height: calc(100vh - 200px);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+
+    &_logo {
+      color: $light-00;
+      padding: 20px;
+      font-size: 40px;
+    }
+    &_h2 {
+      font-size: 20px;
+      color: $light-00;
+      font-weight: 600;
+    }
+    &_h1 {
+      font-size: 104px;
+      line-height: 104px;
+      color: $light-00;
+      font-family: $titillium;
+      font-weight: 900;
+      font-style: bold;
+    }
+    &_h3 {
+      font-family: $rajdhani;
+      color: $light-00;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+      width: 400px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    &_btn {
+      display: flex;
+      width: fit-content;
+      margin: 0 auto;
+      .btn {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        transition: background-color 0.25s ease-in-out;
+        border: 1px solid #fff;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      &_login {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        padding: 0 74px;
+        cursor: pointer;
+      }
+      &_resgister {
+        background: transparent;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .form{
+
+      .login {
+        width: 400px;
+        margin: 0 200px;
+        background-color: $light-00;
+        border-radius: 20px;
+        padding: 20px 80px;
+    
+        &_h3 {
+          font-family: $rajdhani;
+          color: $dark-01;
+          font-size: 26px;
+          line-height: 26px;
+          font-weight: 700;
+          text-align: center;
+          margin: 40px 0;
+        }
+        input[type="text"] {
+          width: calc(100% - 36px);
+          height: 54px;
+          padding: 0 18px;
+          background-color: #fff;
+          border: 1px solid #dedeea;
+          color: #3e3f5e;
+          transition: border-color 0.2s ease-in-out;
+          margin: 10px 0;
+          border-radius: 12px;
+          font-size: 1rem;
+          font-weight: 700;
+          font-family: $rajdhani;
+        }
+    
+        input[type="password"] {
+          width: calc(100% - 36px);
+          height: 54px;
+          padding: 0 18px;
+          background-color: #fff;
+          border: 1px solid #dedeea;
+          color: #3e3f5e;
+          transition: border-color 0.2s ease-in-out;
+          margin: 10px 0;
+          border-radius: 12px;
+          font-size: 1rem;
+          font-weight: 700;
+          font-family: $rajdhani;
+        }
+    
+        &_action {
+          display: flex;
+          justify-content: space-between;
+          margin: 30px 0;
+    
+          p label {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            font-family: $rajdhani;
+          }
+    
+          p a {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            color: $dark-01;
+            text-decoration: none;
+            font-family: $rajdhani;
+          }
+        }
+    
+        button {
+          height: 54px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 700;
+          font-family: $rajdhani;
+          color: #fff;
+          border-radius: 12px;
+          border: none;
+          outline: none;
+          transition: 0.3s ease-in-out;
+          cursor: pointer;
+          background-color: #615dfa;
+          box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+        }
+    
+        p {
+          font-size: 14px;
+          color: #3e3f5e;
+          font-weight: 700;
+          text-align: center;
+          margin: 38px 0;
+        }
+    
+        &-social {
+          text-align: center;
+          align-items: center;
+          i {
+            padding: 12px;
+            margin: 5px;
+            border-radius: 12px;
+            color: $light-00;
+          }
+    
+          .fa-facebook {
+            background-color: #3763d2;
+          }
+    
+          .fa-twitter {
+            background-color: #1abcff;
+          }
+    
+          .fa-envelope{
+            background-color: #7b5dfa;
+          }
+    
+          .fa-youtube {
+            background-color: #fd434f;
+          }
+        }
+      }
+
+      .register {
+        width: 400px;
+        margin: 0 200px;
+        background-color: $light-00;
+        border-radius: 20px;
+        padding: 20px 80px;
+    
+        &_h3 {
+          font-family: $rajdhani;
+          color: $dark-01;
+          font-size: 26px;
+          line-height: 26px;
+          font-weight: 700;
+          text-align: center;
+          margin: 40px 0;
+        }
+        input[type="email"] {
+          width: calc(100% - 36px);
+          height: 54px;
+          padding: 0 18px;
+          background-color: #fff;
+          border: 1px solid #dedeea;
+          color: #3e3f5e;
+          transition: border-color 0.2s ease-in-out;
+          margin: 10px 0;
+          border-radius: 12px;
+          font-size: 1rem;
+          font-weight: 700;
+          font-family: $rajdhani;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 36px);
+            height: 54px;
+            padding: 0 18px;
+            background-color: #fff;
+            border: 1px solid #dedeea;
+            color: #3e3f5e;
+            transition: border-color 0.2s ease-in-out;
+            margin: 10px 0;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: $rajdhani;
+          }
+    
+        input[type="password"] {
+          width: calc(100% - 36px);
+          height: 54px;
+          padding: 0 18px;
+          background-color: #fff;
+          border: 1px solid #dedeea;
+          color: #3e3f5e;
+          transition: border-color 0.2s ease-in-out;
+          margin: 10px 0;
+          border-radius: 12px;
+          font-size: 1rem;
+          font-weight: 700;
+          font-family: $rajdhani;
+        }
+    
+        &_action {
+          display: flex;
+          justify-content: space-between;
+          margin: 30px 0;
+          p input[type="checkbox"]{
+            cursor: pointer;
+          }
+    
+          p label {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            font-family: $rajdhani;
+          }
+    
+          p a {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            color: $dark-01;
+            text-decoration: none;
+            font-family: $rajdhani;
+          }
+        }
+    
+        button {
+          height: 54px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 700;
+          font-family: $rajdhani;
+          color: #fff;
+          border-radius: 12px;
+          border: none;
+          outline: none;
+          transition: 0.3s ease-in-out;
+          cursor: pointer;
+          background-color: $green-01;
+          box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+        }
+    
+        p {
+          font-size: 14px;
+          color: #3e3f5e;
+          font-weight: 700;
+          text-align: center;
+          margin: 38px 0;
+          a{
+            text-decoration: none;
+            color: $green-01;
+          }
+        }
+      }
+  }
+}

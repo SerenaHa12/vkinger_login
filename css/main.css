@@ -1,0 +1,295 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #000;
+  background-image: url(../img/landing-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.main .title {
+  min-height: calc(100vh - 200px);
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main .title_logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 40px;
+}
+.main .title_h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.main .title_h1 {
+  font-size: 104px;
+  line-height: 104px;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+}
+.main .title_h3 {
+  font-family: "Rajdhani", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  width: 400px;
+  text-align: center;
+  margin-top: 30px;
+}
+.main .title_btn {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.main .title_btn .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  transition: background-color 0.25s ease-in-out;
+  border: 1px solid #fff;
+  padding: 0 70px;
+  margin-top: 100px;
+}
+.main .title_btn_login {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 0 74px;
+  cursor: pointer;
+}
+.main .title_btn_resgister {
+  background: transparent;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+}
+.main .form .login {
+  width: 400px;
+  margin: 0 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 80px;
+}
+.main .form .login_h3 {
+  font-family: "Rajdhani", sans-serif;
+  color: #545454;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+}
+.main .form .login input[type=text] {
+  width: calc(100% - 36px);
+  height: 54px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .login input[type=password] {
+  width: calc(100% - 36px);
+  height: 54px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .login_action {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.main .form .login_action p label {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .login_action p a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #545454;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .login button {
+  height: 54px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #615dfa;
+  box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+}
+.main .form .login p {
+  font-size: 14px;
+  color: #3e3f5e;
+  font-weight: 700;
+  text-align: center;
+  margin: 38px 0;
+}
+.main .form .login-social {
+  text-align: center;
+  align-items: center;
+}
+.main .form .login-social i {
+  padding: 12px;
+  margin: 5px;
+  border-radius: 12px;
+  color: #fff;
+}
+.main .form .login-social .fa-facebook {
+  background-color: #3763d2;
+}
+.main .form .login-social .fa-twitter {
+  background-color: #1abcff;
+}
+.main .form .login-social .fa-envelope {
+  background-color: #7b5dfa;
+}
+.main .form .login-social .fa-youtube {
+  background-color: #fd434f;
+}
+.main .form .register {
+  width: 400px;
+  margin: 0 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 80px;
+}
+.main .form .register_h3 {
+  font-family: "Rajdhani", sans-serif;
+  color: #545454;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+}
+.main .form .register input[type=email] {
+  width: calc(100% - 36px);
+  height: 54px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .register input[type=text] {
+  width: calc(100% - 36px);
+  height: 54px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .register input[type=password] {
+  width: calc(100% - 36px);
+  height: 54px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .register_action {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.main .form .register_action p input[type=checkbox] {
+  cursor: pointer;
+}
+.main .form .register_action p label {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .register_action p a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #545454;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+}
+.main .form .register button {
+  height: 54px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #615dfa;
+  box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+}
+.main .form .register p {
+  font-size: 14px;
+  color: #3e3f5e;
+  font-weight: 700;
+  text-align: center;
+  margin: 38px 0;
+}
+.main .form .register p a {
+  text-decoration: none;
+  color: #615dfa;
+}
+/*# sourceMappingURL=main.css.map */
