@@ -199,7 +199,7 @@ body {
 }
 .main .form .register {
   width: 400px;
-  margin: 0 200px;
+  margin: 0 auto;
   background-color: #fff;
   border-radius: 20px;
   padding: 20px 80px;
